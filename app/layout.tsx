@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Providers from "./Providers";
+import Navbar from "../components/Navbar";
 
 export const metadata: Metadata = {
   title: "IMDB App",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <Header />
+          <Navbar />
           {children}
         </Providers>
       </body>
