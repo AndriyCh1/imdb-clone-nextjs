@@ -1,6 +1,7 @@
 export type Movie = {
   id: number;
-  title: string;
+  title?: string;
+  name?: string;
   original_language: string;
   original_title: string;
   overview: string;
@@ -8,7 +9,8 @@ export type Movie = {
   media_type: string;
   genre_ids: number[];
   popularity: number;
-  release_date: string;
+  release_date?: string;
+  first_air_date: string;
   video: boolean;
   vote_average: number;
   vote_count: number;
