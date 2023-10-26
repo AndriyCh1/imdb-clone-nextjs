@@ -5,7 +5,8 @@ export type Movie = {
   original_language: string;
   original_title: string;
   overview: string;
-  poster_path: string;
+  poster_path?: string;
+  backdrop_path?: string;
   media_type: string;
   genre_ids: number[];
   popularity: number;
